@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage3.css') }}">
+  <title>Audio Message Recognition</title>
+</head>
+
+<body>
+  <br>
+  <center>
+    <font color="white">
+    <h1><b>Welcome to Audio Message Recognition!</b></h1>
+    </font>
+  <img src="{{ url_for('audio_feed') }}" width="50%"><br><br>
+  <a class="btn btn-primary mr-1" href="{{url_for('audio')}}" role="button">START</a>
+  <a class="btn btn-primary" href="{{url_for('index')}}" role="button">BACK</a>
+ </center>

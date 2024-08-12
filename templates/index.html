@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+
+  <title>Message Recognition</title>
+</head>
+
+<body>
+  <br>
+  <center>
+    <font color="white">
+    <h1><b>Message Recognition!</b></h1>
+    </font>
+    <form action="{{url_for('video')}}"><br><br><br><br>
+      <font color="white">
+      <h4><b>Ever wanted to draw your imagination by just waving your finger in the air?<br>Our software allows you to
+          capture what you draw in air!<br>Don't believe us? Go ahead and click on the button below!</b> </h4><br>
+        </font>
+      <input class="btn btn-primary" type="submit" value="LET'S DRAW!">
+  </form> <br><br><br>
+  <form action="{{url_for('audio')}}">
+    <font color="white">
+    <h4><b>Ever wanted to listen what is written in the file without actually seeing the file?<br>
+     Our software helps you to recognize text file into audio! !<br>Don't believe us? Go ahead and click on the button below!</b></h4><br>  
+    </font>
+     <input class="btn btn-primary" type="submit" value="LET'S LISTEN!">
+  </form>
+ </center>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
